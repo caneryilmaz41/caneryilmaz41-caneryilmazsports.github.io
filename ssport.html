@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CY | S Sport 1  </title>
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bradmax Player script -->
+    <script src="https://bradmax.com/client/files/player-js/73a9716fd26717763cd2d46fb9e41463645853de_14815/bradmax_player.js"></script>
+</head>
+<body id="top">
+
+<!-- Header -->
+<header class="header" data-header>
+    <div class="container">
+        <div class="overlay" data-overlay></div>
+        <a href="./index.html" class="logo">
+            <img src="./assets/images/vv.png" alt="Filmlane logo">
+        </a>
+        <div class="header-actions">
+            
+            <div class="lang-wrapper">
+                <label for="language">
+                    <ion-icon name="globe-outline"></ion-icon>
+                </label>
+                <select name="language" id="language">
+                    <option value="en">TR</option>
+                    
+                </select>
+            </div>
+            <button class="btn btn-primary">kayıt ol</button>
+        </div>
+        <button class="menu-open-btn" data-menu-open-btn>
+            <ion-icon name="reorder-two"></ion-icon>
+        </button>
+        <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+                <a href="./index.html" class="logo">
+                    <img src="./assets/images/logo.svg" alt="Filmlane logo">
+                </a>
+                <button class="menu-close-btn" data-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                
+            </ul>
+            <ul class="navbar-social-list">
+                <li>
+                    <a href="#" class="navbar-social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-social-link">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-social-link">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main content -->
+<main>
+    <article>
+        <!-- Movie detail section -->
+        <section class="movie-detail">
+            <div class="container">
+                <figure class="movie-detail-banner">
+                    <img src="./assets/images/ssport.jpg" alt="Free guy movie poster">
+                    <button class="play-btn">
+                        
+                    </button>
+                </figure>
+                
+                    
+                    
+                    <!-- Bradmax Player container -->
+                    <div style="width: 890px; height: 500px; background: black;" id="PLAYER_DOM_ID"></div>
+                    <script type="text/javascript">
+                        var config = {
+                            dataProvider: {
+                                source: [
+                                    { url: "https://corsproxy.org/?https://cakal.click/yayinss.m3u8" }
+                                ]
+                            }
+                        };
+                        var element = document.getElementById("PLAYER_DOM_ID");
+                        var player = window.bradmax.player.create(element, config);
+                    </script>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- TV Series section -->
+        <section class="tv-series">
+            <div class="container">
+                <!-- TV Series content -->
+            </div>
+        </section>
+
+    </article>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/vv.png" alt="Filmlane logo">
+          </a>
+
+          
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">caneryılmazsports</a> All Rights Reserved
+        </p>
+
+        
+
+      </div>
+    </div>
+
+  </footer>
+
+
+<!-- Go to top button -->
+<a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+</a>
+
+<!-- Custom JS link -->
+<script src="./assets/js/script.js"></script>
+
+<!-- Ionicon link -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

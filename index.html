@@ -1,1 +1,523 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/caneryilmazsports.github.io/logocum.png"/><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/caneryilmazsports.github.io/logo192.png"/><link rel="manifest" href="/caneryilmazsports.github.io/manifest.json"/><title>CANERYILMAZSPORTS</title><script defer="defer" src="/caneryilmazsports.github.io/static/js/main.c4e803b3.js"></script><link href="/caneryilmazsports.github.io/static/css/main.1a923ad4.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>caneryılmazsports</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/vv.png"  />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/vv.png" alt="Filmlane logo" />
+        </a>
+
+        <div class="header-actions">
+          <div class="lang-wrapper">
+            <label for="language">
+              <ion-icon name="globe-outline"></ion-icon>
+            </label>
+
+            <select name="language" id="language">
+              <option value="en">TR</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary">Kayıt Ol</button>
+        </div>
+
+        <button class="menu-open-btn" data-menu-open-btn>
+          <ion-icon name="reorder-two"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/vv.png" alt="Filmlane logo" />
+            </a>
+
+            <button class="menu-close-btn" data-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <!-- <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Movie</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Tv Show</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Web Series</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Pricing</a>
+          </li> -->
+          </ul>
+
+          
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Caner Yılmaz Sports</p>
+
+              <h1 class="h1 hero-title">
+                Tüm maçları kesintisiz
+                <br />
+                <strong>HD</strong>,kalitesiyle izleyin.
+              </h1>
+
+              <button class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+
+                <span>CANLI</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #UPCOMING
+      -->
+
+        <section class="upcoming">
+          <div class="container">
+            <div class="flex-wrapper">
+              <div class="title-wrapper">
+                <p class="section-subtitle">Canlı İzle</p>
+
+                <h2 class="h2 section-title">Kanallar</h2>
+                
+              </div>
+
+              <ul class="filter-list">
+                <li>
+                  <button class="filter-btn">Sport</button>
+                </li>
+
+                <li>
+                  <button class="filter-btn">Belgesel</button>
+                </li>
+
+                <li>
+                  <button class="filter-btn">7/24</button>
+                  
+                </li>
+                
+              </ul>
+              
+            </div>
+            <p class="section-subtitle">Yana Kaydır</p>
+            <ul class="movies-list has-scrollbar">
+              <li>
+                <div class="movie-card">
+                  <a href="./b1.html">
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/b1.jpg"
+                        alt="The Northman movie poster"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="./b1.html">
+                      <h3 class="card-title">Bein Sports 1</h3>
+                    </a>
+
+                    <time datetime="2022">Canlı</time>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+                  <a href="./b1a.html">
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/b1.jpg"
+                        alt="Doctor Strange in the Multiverse of Madness movie poster"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="./b1a.html">
+                      <h3 class="card-title">Bein Sports 1 Yedek 1</h3>
+                    </a>
+
+                    <time datetime="2022">Canlı</time>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="movie-card">
+                  <a href="./b1a2.html">
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/b1.jpg"
+                        alt="Doctor Strange in the Multiverse of Madness movie poster"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="./b1a2.html">
+                      <h3 class="card-title">Bein Sports 1 Yedek 2</h3>
+                    </a>
+
+                    <time datetime="2022">Canlı</time>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="movie-card">
+                  <a href="./b2.html">
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/b2.jpg"
+                        alt="Doctor Strange in the Multiverse of Madness movie poster"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="./b2.html">
+                      <h3 class="card-title">Bein Sports 2</h3>
+                    </a>
+
+                    <time datetime="2022">Canlı</time>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+                  <a href="./b3.html">
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/b3.jpg"
+                        alt="Memory movie poster"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="./b3.html">
+                      <h3 class="card-title">Bein Sports 3</h3>
+                    </a>
+
+                    <time datetime="2022">Canlı</time>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+                  <a href="./exxen.html">
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/exxen.jpg"
+                        alt="The Unbearable Weight of Massive Talent movie poster"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="./exxen.html">
+                      <h3 class="card-title">Exxen</h3>
+                    </a>
+
+                    <time datetime="2022">Canlı</time>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="movie-card">
+                  <a href="./ssport.html">
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/ssport.jpg"
+                        alt="The Unbearable Weight of Massive Talent movie poster"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="./ssport.html">
+                      <h3 class="card-title">S Sport 1</h3>
+                    </a>
+
+                    <time datetime="2022">Canlı</time>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="service">
+          <div class="container">
+            <div class="service-banner">
+              <figure>
+                <img
+                  src="./assets/images/lig.png"
+                  alt="HD 4k resolution! only $3.99"
+                />
+              </figure>
+            </div>
+
+            <div class="service-content">
+              <p class="service-subtitle">cy sports</p>
+
+              <h2 class="h2 service-title">
+                Artık maç kaçırma derdi yok! Caner Yılmaz Sports, en iyi spor
+                kanallarını tek bir platformda birleştiriyor.
+              </h2>
+
+              <p class="service-text">
+                Caner Yılmaz Sports, spor tutkunları için özel olarak
+                tasarlanmış bir platformdur. En iyi spor kanallarını tek bir
+                platformda birleştirerek kullanıcılarına kesintisiz bir yayın
+                deneyimi sunar.
+              </p>
+
+              <ul class="service-list">
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="tv"></ion-icon>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Kesintisiz Yayın</h3>
+
+                      <p class="card-text">
+                        Caner Yılmaz Sports, en iyi spor kanallarını kesintisiz
+                        bir şekilde izleme imkanı sunar.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="videocam"></ion-icon>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Her Yerde İzle</h3>
+
+                      <p class="card-text">
+                        Caner Yılmaz Sports'u istediğiniz her yerden,
+                        istediğiniz cihazdan kullanabilirsiniz.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TOP RATED
+      -->
+
+        <section class="top-rated">
+          <div class="container">
+            <p class="section-subtitle">Canlı</p>
+
+            <h2 class="h2 section-title">
+              Futbol tutkusunu doyasıya yaşa, her maç seninle
+            </h2>
+
+            <ul class="filter-list">
+              <li>
+                <button class="filter-btn">Heyecan</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Tutku</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Sürükleyici</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Kusursuz</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="cta-title">
+                Futbolun nabzı burada atıyor, seni bekliyoruz...
+              </h2>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand-wrapper">
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/vv.png" alt="Filmlane logo" />
+            </a>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="quicklink-wrapper">
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 <a href="#">caneryılmazsports</a> All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<div align="center">
+  
+  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/filmlane)
+  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/filmlane?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/filmlane?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
+  [![YouTube Video Views](https://img.shields.io/youtube/views/G-mEhvhWyw8?style=social)](https://youtu.be/G-mEhvhWyw8)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <br />
+  <br />
+  
+  <img src="./readme-images/project-logo.png" />
 
-## Available Scripts
+  <h2 align="center">Filmlane - Movie website</h2>
 
-In the project directory, you can run:
+  Filmlane is a fully responsive movie website page, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
-### `npm start`
+  <a href="https://codewithsadee.github.io/filmlane/"><strong>➥ Live Demo</strong></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
 
-### `npm test`
+### Demo Screeshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Filmlane Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before you begin, ensure you have met the following requirements:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run Locally
 
-### `npm run eject`
+To run **Filmlane** locally, run this command on your git bash:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Linux and macOS:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+sudo git clone https://github.com/codewithsadee/filmlane.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Windows:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/codewithsadee/filmlane.git
+```
 
-## Learn More
+### Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is **free to use** and does not contains any license.
