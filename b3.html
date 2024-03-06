@@ -14,9 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bradmax Player script -->
-  
-    <script src="https://bradmax.com/client/files/player-js/73a9716fd26717763cd2d46fb9e41463645853de_14815/bradmax_player.js"></script>
+    <!-- Video.js CSS link -->
+    <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet" />
+
+    <style>
+        /* Responsive video container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+        }
+        .video-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
 <body id="top">
 
@@ -75,8 +91,22 @@
                     <button class="play-btn"></button>
                 </figure>
 
-                <!-- Bradmax Player container -->
-                <iframe src="https://bradm.ax/build/202403/05/b057cc1133c480972e29ee74d43333c0bbbffc7f/index.html?mediaUrl=https://corsproxy.link/?https://odin.cd9184d3e95e6.shop/3/chunk_hd.m3u8&title=BeinSport3&splashImgUrl=https://i.ibb.co/sPc2Kgk/logocum.png" width="890" height="500" frameborder="0" allowfullscreen></iframe>
+                <!-- Video.js player container -->
+                <div class="video-container">
+                    <video
+                        autoplay="true"
+                        id="my-video"
+                        class="video-js vjs-big-play-centered vjs-theme-sea"
+                        controls
+                        preload="auto"
+                        fluid="true"
+                        poster="https://i.ibb.co/sPc2Kgk/logocum.png"
+                        data-setup='{
+                            
+                        }'
+                    >
+                    </video>
+                </div>
             </div>
         </section>
     </article>
@@ -114,10 +144,21 @@
 <!-- Custom JS link -->
 <script src="./assets/js/script.js"></script>
 
-<!-- Ionicon link -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- hls.js link -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
+<script>
+    if (Hls.isSupported()) {
+      var video = document.getElementById('my-video');
+      var hls = new Hls();
+      hls.loadSource('https://corsproxy.link/?https://odin.cd9184d3e95e6.shop/3/chunk_hd.m3u8');
+      hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = 'https://corsproxy.link/?https://odin.cd9184d3e95e6.shop/3/chunk_hd.m3u8';
+    } else {
+      alert('Your browser does not support HLS.');
+    }
+</script>
 
 </body>
 </html>
