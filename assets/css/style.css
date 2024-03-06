@@ -352,6 +352,7 @@ body.active { overflow: hidden; }
  */
 
 .movies-list.has-scrollbar {
+   
   display: flex;
   justify-content: flex-start;
   
@@ -360,7 +361,7 @@ body.active { overflow: hidden; }
   padding-bottom: 25px;
 }
 
-.has-scrollbar::-webkit-scrollbar { height: 8px; }
+.has-scrollbar::-webkit-scrollbar { height: 32px; }
 
 .has-scrollbar::-webkit-scrollbar-track {
   background: transparent;
