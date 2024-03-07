@@ -352,7 +352,7 @@ body.active { overflow: hidden; }
  */
 
 .movies-list.has-scrollbar {
-   
+  
   display: flex;
   justify-content: flex-start;
   
@@ -500,7 +500,15 @@ body.active { overflow: hidden; }
   border-radius: 5px; /* İstediğiniz köşe yuvarlaklığını ayarlayabilirsiniz */
   overflow: hidden; /* İçeriğin container dışına taşmasını engeller */
 }
+.video-container iframe {
+  position: absolute;
+  
 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 
