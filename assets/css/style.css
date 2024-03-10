@@ -258,7 +258,8 @@ body.active { overflow: hidden; }
  */
 
 .movies-list {
-  display: grid;
+  display: flex;
+  flex-direction:row;
   
 }
 
