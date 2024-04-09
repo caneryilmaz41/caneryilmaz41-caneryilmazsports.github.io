@@ -2,7 +2,7 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  box-sizinch: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
@@ -159,6 +159,7 @@ img {
 }
 .header-text p {
   margin: 0;
+  
 }
 .header-top svg {
   font-size: 1em;
@@ -644,7 +645,7 @@ header ul li.blink i {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  height: 62px;
+  height: 50px;
 }
 .single-match {
   display: none;
