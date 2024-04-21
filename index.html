@@ -176,6 +176,10 @@
                     <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
                     <div class="away" style="text-align:right;"><img src="images/beinsports1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
                 </div>
+                <div class="channel" onclick="changeChannel(29)">
+                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
+                    <div class="away" style="text-align:right;"><img src="images/beinsports1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
+                </div>
                 <div class="channel" onclick="changeChannel(2)">
                     <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
                     <div class="away" style="text-align:right;"><img src="images/beinsports2.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
@@ -268,34 +272,37 @@
     var splashImgUrl = "https://i.ibb.co/VpSSbsd/logocum.png";
 
     var mediaUrls = {
-        1: "https://tibleoc.macbizde5.com/yayinzirve.m3u8",
-        2: "https://tibleoc.macbizde5.com/yayinb2.m3u8",
-        3: "https://tibleoc.macbizde5.com/yayinb3.m3u8",
-        4: "https://tibleoc.macbizde5.com/yayinb4.m3u8",
-        5: "https://tibleoc.macbizde5.com/yayinbm1.m3u8",
-        6: "https://tibleoc.macbizde5.com/yayinbm2.m3u8",
-        7: "https://tibleoc.macbizde5.com/yayinss.m3u8",
-        8: "https://tibleoc.macbizde5.com/yayinss2.m3u8",
-        9: "https://tibleoc.macbizde5.com/yayint1.m3u8",
-        10: "https://tibleoc.macbizde5.com/yayint2.m3u8",
-        11: "https://tibleoc.macbizde5.com/yayint3.m3u8",
-        12: "https://tibleoc.macbizde5.com/yayinsmarts.m3u8",
-        13: "https://tibleoc.macbizde5.com/yayinb5.m3u8",
-        14: "https://tibleoc.macbizde5.com/yayinas.m3u8",
-        15: "https://tibleoc.macbizde5.com/yayinsms2.m3u8",
-        16: "https://tibleoc.macbizde5.com/yayinatv.m3u8",
-        17: "https://tibleoc.macbizde5.com/yayintv8.m3u8",
-        18: "https://tibleoc.macbizde5.com/yayintv85.m3u8",
-        19: "https://tibleoc.macbizde5.com/yayinnbatv.m3u8",
-        20: "https://tibleoc.macbizde5.com/yayinex1.m3u8",
-        21: "https://tibleoc.macbizde5.com/yayinex2.m3u8",
-        22: "https://tibleoc.macbizde5.com/yayinex3.m3u8",
-        23: "https://tibleoc.macbizde5.com/yayinex4.m3u8",
-        24: "https://tibleoc.macbizde5.com/yayinex5.m3u8",
-        25: "https://tibleoc.macbizde5.com/yayinex6.m3u8",
-        26: "https://tibleoc.macbizde5.com/yayinex7.m3u8",
-        27: "https://tibleoc.macbizde5.com/yayinex8.m3u8",
-        28: "https://tibleoc.macbizde5.com/yayintrtspor.m3u8",
+
+        1: "https://f.trgoals816.xyz/yayin1.m3u8",
+2: "https://f.trgoals816.xyz/yayinb2.m3u8",
+3: "https://f.trgoals816.xyz/yayinb3.m3u8",
+4: "https://f.trgoals816.xyz/yayinb4.m3u8",
+5: "https://f.trgoals816.xyz/yayinbm1.m3u8",
+6: "https://f.trgoals816.xyz/yayinbm2.m3u8",
+7: "https://f.trgoals816.xyz/yayinss.m3u8",
+8: "https://f.trgoals816.xyz/yayinss2.m3u8",
+9: "https://f.trgoals816.xyz/yayint1.m3u8",
+10: "https://f.trgoals816.xyz/yayint2.m3u8",
+11: "https://f.trgoals816.xyz/yayint3.m3u8",
+12: "https://f.trgoals816.xyz/yayinsmarts.m3u8",
+13: "https://f.trgoals816.xyz/yayinb5.m3u8",
+14: "https://f.trgoals816.xyz/yayinas.m3u8",
+15: "https://f.trgoals816.xyz/yayinsms2.m3u8",
+16: "https://f.trgoals816.xyz/yayinatv.m3u8",
+17: "https://f.trgoals816.xyz/yayintv8.m3u8",
+18: "https://f.trgoals816.xyz/yayintv85.m3u8",
+19: "https://f.trgoals816.xyz/yayinnbatv.m3u8",
+20: "https://f.trgoals816.xyz/yayinex1.m3u8",
+21: "https://f.trgoals816.xyz/yayinex2.m3u8",
+22: "https://f.trgoals816.xyz/yayinex3.m3u8",
+23: "https://f.trgoals816.xyz/yayinex4.m3u8",
+24: "https://f.trgoals816.xyz/yayinex5.m3u8",
+25: "https://f.trgoals816.xyz/yayinex6.m3u8",
+26: "https://f.trgoals816.xyz/yayinex7.m3u8",
+27: "https://f.trgoals816.xyz/yayinex8.m3u8",
+28: "https://f.trgoals816.xyz/yayintrtspor.m3u8",
+29: "https://f.trgoals816.xyz/yayinzirve.m3u8"
+        //https://s.trgoals808.xyz/
     };
 
     var fullUrl = iframeUrl + encodeURIComponent(mediaUrls[channel]) + "&title=" + encodeURIComponent(title) + "&duration=" + duration + "&splashImgUrl=" + encodeURIComponent(splashImgUrl);
