@@ -1,324 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>caneryılmazsports</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<style>
-    body {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>caneryılmazsports</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #1f1f1f;
         color: #fff;
-    }
+      }
 
-    .container {
+      .container {
         width: 90%;
         margin: 0 auto;
         max-width: 1200px;
         padding: 20px;
         box-sizing: border-box;
-    }
+      }
 
-    header {
-       
-    text-align: center;
-    background-color: #333;
-    padding:  75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    /* Örnek stil değişiklikleri */
-    background-image: url('images/HEADER.png');
-    background-size: cover;
-    background-position: center;
-    
-}
+      header {
+        text-align: center;
+        background-color: #333;
+        padding: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        /* Örnek stil değişiklikleri */
+        background-image: url("images/HEADER.png");
+        background-size: cover;
+        background-position: center;
+      }
 
-    .logo h1 {
+      .logo h1 {
         margin: 0;
         font-size: 24px;
-    }
-    footer {
+      }
+      footer {
         margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+      }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
 
-.footer-logo img {
-    width: 150px;
-}
+      .footer-logo img {
+        width: 150px;
+      }
 
-.footer-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+      .footer-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
 
-.footer-menu li {
-    margin-right: 20px;
-}
+      .footer-menu li {
+        margin-right: 20px;
+      }
 
-.footer-menu a {
-    color: #fff;
-    text-decoration: none;
-}
+      .footer-menu a {
+        color: #fff;
+        text-decoration: none;
+      }
 
-.footer-info p {
-    margin-bottom: 10px;
-}
-    .video-container {
+      .footer-info p {
+        margin-bottom: 10px;
+      }
+      .video-container {
         display: flex;
         justify-content: space-between;
         gap: 20px;
-    }
+      }
 
-    .channel-list {
+      .channel-list {
         flex: 1;
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
+      }
 
-    .channel {
+      .channel {
         display: flex;
         flex-direction: row;
         background-color: #333;
         padding: 10px;
         text-align: center;
         border-radius: 10px;
-        justify-content:space-between;
+        justify-content: space-between;
         cursor: pointer; /* Cursor değişikliği */
-    }
+      }
 
-    .channel i {
+      .channel i {
         font-size: 24px;
         color: #fff;
-    }
+      }
 
-    .channel p {
+      .channel p {
         margin-top: 5px;
         font-size: 16px;
-    }
+      }
 
-    .video-box {
-    flex: 5;
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center; /* Eklenen stil */
-    align-items: center; /* Eklenen stil */
-}
-.video-box iframe {
-    max-width: 100%;
-    max-height: 100%;
-    border: none;
-}
-    .video-box p {
+      .video-box {
+        flex: 5;
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center; /* Eklenen stil */
+        align-items: center; /* Eklenen stil */
+      }
+      .video-box iframe {
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+      }
+      .video-box p {
         margin-top: 10px;
         font-size: 18px;
-    }
+      }
 
-    /* Media Query for Responsive Design */
-    @media (max-width: 768px) {
+      /* Media Query for Responsive Design */
+      @media (max-width: 768px) {
         .container {
-            padding: 10px;
+          padding: 10px;
         }
 
         .video-container {
-            flex-direction: column;
-            gap: 10px;
+          flex-direction: column;
+          gap: 10px;
         }
 
         .channel-list,
         .video-box {
-            width: 100%;
+          width: 100%;
         }
-    }
-</style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container"></div>
+    </header>
 
-<header>
-    <div class="container">
-       
-           
-        
-    </div>
-</header>
-
-<main>
-    <div class="container">
+    <main>
+      <div class="container">
         <div class="video-container">
-            <div class="channel-list">
-                <div class="channel" onclick="changeChannel(29)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsports1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(1)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsports1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(2)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsports2.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(3)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsports3.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(4)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsports4.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(13)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsports5.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(5)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsportsmax1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(6)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/beinsportsmax2.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(7)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/ssport1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(8)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/ssport2.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <!-- Diğer kanallar buraya eklenecek -->
+          <div class="channel-list">
+            <div class="channel" onclick="changeChannel(29)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsports1.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div class="video-box" id="video_player">
-                
-                
+            <div class="channel" onclick="changeChannel(1)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsports1.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div class="channel-list">
-                <div class="channel" onclick="changeChannel(12)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/smartspor.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(15)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/smartspor2.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div> <div class="channel" onclick="changeChannel(9)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/tivibu1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div> <div class="channel" onclick="changeChannel(10)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/tivibu2.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div> <div class="channel" onclick="changeChannel(11)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/tivibu3.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div> <div class="channel" onclick="changeChannel(20)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/exxen1.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(21)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/exxen2.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(22)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/exxen3.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(23)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/exxen4.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
-                <div class="channel" onclick="changeChannel(24)">
-                    <img src="images/tv.png" style="border-radius:0px !important;" width="20" height="20" loading="lazy">
-                    <div class="away" style="text-align:right;"><img src="images/exxen5.png" style="border-radius:0px !important; margin-top:-10px;" width="100" loading="lazy"></div>
-                </div>
+            <div class="channel" onclick="changeChannel(2)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsports2.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
             </div>
+            <div class="channel" onclick="changeChannel(3)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsports3.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(4)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsports4.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(13)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsports5.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(5)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsportsmax1.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(6)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/beinsportsmax2.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(7)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/ssport1.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(8)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/ssport2.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <!-- Diğer kanallar buraya eklenecek -->
+          </div>
+          <div class="video-box" id="video_player"></div>
+          <div class="channel-list">
+            <div class="channel" onclick="changeChannel(12)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/smartspor.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(15)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/smartspor2.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(9)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/tivibu1.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(10)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/tivibu2.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(11)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/tivibu3.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(20)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/exxen1.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(21)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/exxen2.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(22)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/exxen3.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(23)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/exxen4.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="channel" onclick="changeChannel(24)">
+              <img
+                src="images/tv.png"
+                style="border-radius: 0px !important"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <div class="away" style="text-align: right">
+                <img
+                  src="images/exxen5.png"
+                  style="border-radius: 0px !important; margin-top: -10px"
+                  width="100"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</main>
+      </div>
+    </main>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    // Sayfa yüklendiğinde varsayılan olarak beIN SPORTS 1'in oynamasını sağlayan işlev
-    changeChannel(1);
-});
-   function changeChannel(channel) {
-    var iframeUrl = "https://bradm.ax/build/202403/05/b057cc1133c480972e29ee74d43333c0bbbffc7f/index.html?mediaUrl=";
-    var title = "caneryılmazsports-hd";
-    var duration = 0;
-    var splashImgUrl = "https://i.ibb.co/VpSSbsd/logocum.png";
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sayfa yüklendiğinde varsayılan olarak beIN SPORTS 1'in oynamasını sağlayan işlev
+        changeChannel(1);
+      });
+      function changeChannel(channel) {
+        var iframeUrl =
+          "https://bradm.ax/build/202403/05/b057cc1133c480972e29ee74d43333c0bbbffc7f/index.html?mediaUrl=";
+        var title = "caneryılmazsports-hd";
+        var duration = 0;
+        var splashImgUrl = "https://i.ibb.co/VpSSbsd/logocum.png";
 
-    var mediaUrls = {
+        var mediaUrls = {
+          
+          1: "https://h.trgoals818.xyz/yayin1.m3u8",
+          2: "https://h.trgoals818.xyz/yayinb2.m3u8",
+          3: "https://h.trgoals818.xyz/yayinb3.m3u8",
+          4: "https://h.trgoals818.xyz/yayinb4.m3u8",
+          5: "https://h.trgoals818.xyz/yayinbm1.m3u8",
+          6: "https://h.trgoals818.xyz/yayinbm2.m3u8",
+          7: "https://h.trgoals818.xyz/yayinss.m3u8",
+          8: "https://h.trgoals818.xyz/yayinss2.m3u8",
+          9: "https://h.trgoals818.xyz/yayint1.m3u8",
+          10: "https://h.trgoals818.xyz/yayint2.m3u8",
+          11: "https://h.trgoals818.xyz/yayint3.m3u8",
+          12: "https://h.trgoals818.xyz/yayinsmarts.m3u8",
+          13: "https://h.trgoals818.xyz/yayinb5.m3u8",
+          14: "https://h.trgoals818.xyz/yayinas.m3u8",
+          15: "https://h.trgoals818.xyz/yayinsms2.m3u8",
+          16: "https://h.trgoals818.xyz/yayinatv.m3u8",
+          17: "https://h.trgoals818.xyz/yayintv8.m3u8",
+          18: "https://h.trgoals818.xyz/yayintv85.m3u8",
+          19: "https://h.trgoals818.xyz/yayinnbatv.m3u8",
+          20: "https://h.trgoals818.xyz/yayinex1.m3u8",
+          21: "https://h.trgoals818.xyz/yayinex2.m3u8",
+          22: "https://h.trgoals818.xyz/yayinex3.m3u8",
+          23: "https://h.trgoals818.xyz/yayinex4.m3u8",
+          24: "https://h.trgoals818.xyz/yayinex5.m3u8",
+          25: "https://h.trgoals818.xyz/yayinex6.m3u8",
+          26: "https://h.trgoals818.xyz/yayinex7.m3u8",
+          27: "https://h.trgoals818.xyz/yayinex8.m3u8",
+          28: "https://h.trgoals818.xyz/yayintrtspor.m3u8",
+          29: "https://h.trgoals818.xyz/yayinzirve.m3u8",
+          //https://s.trgoals808.xyz/
+        };
 
-        1: "https://f.trgoals816.xyz/yayin1.m3u8",
-2: "https://f.trgoals816.xyz/yayinb2.m3u8",
-3: "https://f.trgoals816.xyz/yayinb3.m3u8",
-4: "https://f.trgoals816.xyz/yayinb4.m3u8",
-5: "https://f.trgoals816.xyz/yayinbm1.m3u8",
-6: "https://f.trgoals816.xyz/yayinbm2.m3u8",
-7: "https://f.trgoals816.xyz/yayinss.m3u8",
-8: "https://f.trgoals816.xyz/yayinss2.m3u8",
-9: "https://f.trgoals816.xyz/yayint1.m3u8",
-10: "https://f.trgoals816.xyz/yayint2.m3u8",
-11: "https://f.trgoals816.xyz/yayint3.m3u8",
-12: "https://f.trgoals816.xyz/yayinsmarts.m3u8",
-13: "https://f.trgoals816.xyz/yayinb5.m3u8",
-14: "https://f.trgoals816.xyz/yayinas.m3u8",
-15: "https://f.trgoals816.xyz/yayinsms2.m3u8",
-16: "https://f.trgoals816.xyz/yayinatv.m3u8",
-17: "https://f.trgoals816.xyz/yayintv8.m3u8",
-18: "https://f.trgoals816.xyz/yayintv85.m3u8",
-19: "https://f.trgoals816.xyz/yayinnbatv.m3u8",
-20: "https://f.trgoals816.xyz/yayinex1.m3u8",
-21: "https://f.trgoals816.xyz/yayinex2.m3u8",
-22: "https://f.trgoals816.xyz/yayinex3.m3u8",
-23: "https://f.trgoals816.xyz/yayinex4.m3u8",
-24: "https://f.trgoals816.xyz/yayinex5.m3u8",
-25: "https://f.trgoals816.xyz/yayinex6.m3u8",
-26: "https://f.trgoals816.xyz/yayinex7.m3u8",
-27: "https://f.trgoals816.xyz/yayinex8.m3u8",
-28: "https://f.trgoals816.xyz/yayintrtspor.m3u8",
-29: "https://f.trgoals816.xyz/yayinzirve.m3u8"
-        //https://s.trgoals808.xyz/
-    };
+        var fullUrl =
+          iframeUrl +
+          encodeURIComponent(mediaUrls[channel]) +
+          "&title=" +
+          encodeURIComponent(title) +
+          "&duration=" +
+          duration +
+          "&splashImgUrl=" +
+          encodeURIComponent(splashImgUrl);
 
-    var fullUrl = iframeUrl + encodeURIComponent(mediaUrls[channel]) + "&title=" + encodeURIComponent(title) + "&duration=" + duration + "&splashImgUrl=" + encodeURIComponent(splashImgUrl);
-
-    document.getElementById('video_player').innerHTML = '<iframe src="' + fullUrl + '" width="100%" height="400px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-}
-</script>
-<footer>
-    <div class="container">
-        
-           <p style="display: flex;text-align: center;"> @cysportshd </p>
-            
-        
-       
-    </div>
-</footer>
-
-</body>
+        document.getElementById("video_player").innerHTML =
+          '<iframe src="' +
+          fullUrl +
+          '" width="100%" height="400px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+      }
+    </script>
+    <footer>
+      <div class="container">
+        <p style="display: flex; text-align: center">@cysportshd</p>
+      </div>
+    </footer>
+  </body>
 </html>
