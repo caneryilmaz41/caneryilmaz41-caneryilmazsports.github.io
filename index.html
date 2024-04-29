@@ -530,7 +530,6 @@
         var splashImgUrl = "https://i.ibb.co/VpSSbsd/logocum.png";
 
         var mediaUrls = {
-          // https://hls.azurecdnrtmpikiazurecdnfastly.workers.dev/https://serverbir.volestream-hls.site/hls/bein-sports-1.m3u8
           1: "yayin1.m3u8",
           2: "yayinb2.m3u8",
           3: "yayinb3.m3u8",
@@ -560,12 +559,13 @@
           27: "yayinex8.m3u8",
           28: "yayintrtspor.m3u8",
           29: "yayinzirve.m3u8",
-          //https://s.trgoals808.xyz/
         };
 
         var fullUrl =
           iframeUrl +
-          encodeURIComponent("https://m3u8.bakmasaskin.workers.dev/"+mediaUrls[channel]) +
+          encodeURIComponent(
+            "https://m3u8.zensizolmaz.workers.dev/" + mediaUrls[channel]
+          ) +
           "&title=" +
           encodeURIComponent(title) +
           "&duration=" +
