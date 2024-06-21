@@ -168,7 +168,7 @@
       <div class="container">
         <div class="video-container">
           <div class="channel-list">
-            <div class="channel" onclick="changeChannel(30)">
+            <div class="channel" onclick="changeChannel2(1)">
               <img
                 src="images/tv.png"
                 style="border-radius: 0px !important"
@@ -603,6 +603,35 @@
           iframeUrl +
           encodeURIComponent(
             "https://m3u8.trgoals73676.workers.dev/" + mediaUrls[channel]
+          ) +
+          "&title=" +
+          encodeURIComponent(title) +
+          "&duration=" +
+          duration +
+          "&splashImgUrl=" +
+          encodeURIComponent(splashImgUrl);
+
+        document.getElementById("video_player").innerHTML =
+          '<iframe src="' +
+          fullUrl +
+          '" width="100%" height="400px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+      }
+      function changeChannel2(channel) {
+        var iframeUrl =
+          "https://bradm.ax/build/202403/05/b057cc1133c480972e29ee74d43333c0bbbffc7f/index.html?mediaUrl=";
+        var title = "caneryılmazsports-hd";
+        var duration = 0;
+        var splashImgUrl = "https://i.ibb.co/VpSSbsd/logocum.png";
+
+        var mediaUrls = {
+          1: "master_4.m3u8",
+         
+        };
+
+        var fullUrl =
+          iframeUrl +
+          encodeURIComponent(
+            "https://d1u68oyra9spme.cloudfront.net/" + mediaUrls[channel]
           ) +
           "&title=" +
           encodeURIComponent(title) +
