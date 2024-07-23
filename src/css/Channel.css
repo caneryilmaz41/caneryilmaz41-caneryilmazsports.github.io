@@ -1,0 +1,11 @@
+/* Channel.css */
+
+.channel {
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .channel img {
+    border-radius: 0px;
+  }
+  

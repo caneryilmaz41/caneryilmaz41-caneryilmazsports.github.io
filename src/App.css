@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  background-color: #333;
+  padding: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /* background-image: url("images/HEADER.png"); */
+  background-size: cover;
+  background-position: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-menu li {
+  margin-right: 20px;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-info p {
+  margin-bottom: 10px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.channel-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.channel {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.channel i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.channel p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.video-box {
+  flex: 5;
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-box iframe {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+.video-box p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .video-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .channel-list,
+  .video-box {
+    width: 100%;
+  }
+}
