@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/caneryilmazsports.github.io/static/css/main.29f45c4a.css",
-    "main.js": "/caneryilmazsports.github.io/static/js/main.c1123000.js",
+    "main.js": "/caneryilmazsports.github.io/static/js/main.dedce2a3.js",
     "index.html": "/caneryilmazsports.github.io/index.html",
     "main.29f45c4a.css.map": "/caneryilmazsports.github.io/static/css/main.29f45c4a.css.map",
-    "main.c1123000.js.map": "/caneryilmazsports.github.io/static/js/main.c1123000.js.map"
+    "main.dedce2a3.js.map": "/caneryilmazsports.github.io/static/js/main.dedce2a3.js.map"
   },
   "entrypoints": [
     "static/css/main.29f45c4a.css",
-    "static/js/main.c1123000.js"
+    "static/js/main.dedce2a3.js"
   ]
 }
