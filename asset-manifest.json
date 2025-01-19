@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/caneryilmazsports.github.io/static/css/main.d5c2c664.css",
-    "main.js": "/caneryilmazsports.github.io/static/js/main.43bb39f2.js",
+    "main.js": "/caneryilmazsports.github.io/static/js/main.d76a881c.js",
     "static/media/slick.svg": "/caneryilmazsports.github.io/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/caneryilmazsports.github.io/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/caneryilmazsports.github.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/caneryilmazsports.github.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/caneryilmazsports.github.io/index.html",
     "main.d5c2c664.css.map": "/caneryilmazsports.github.io/static/css/main.d5c2c664.css.map",
-    "main.43bb39f2.js.map": "/caneryilmazsports.github.io/static/js/main.43bb39f2.js.map"
+    "main.d76a881c.js.map": "/caneryilmazsports.github.io/static/js/main.d76a881c.js.map"
   },
   "entrypoints": [
     "static/css/main.d5c2c664.css",
-    "static/js/main.43bb39f2.js"
+    "static/js/main.d76a881c.js"
   ]
 }
